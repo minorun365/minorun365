@@ -70,7 +70,9 @@ def diagonal_wave(seed=41, cell=46):
             size = cell * lerp(0.50, 0.88, band)
             op = lerp(0.28, 0.92, band) * lerp(0.55, 1.0, left_damp)
             col = ramp(progress, stops)
-            if band > 0.60 and rnd.random() < 0.06:
+            # 明るい差し色は右側だけ。文字に近い左半分へ置くと、
+            # そのタイルだけ白さが際立って視線を持っていかれる。
+            if gx > W * 0.62 and band > 0.60 and rnd.random() < 0.06:
                 col = ACCENT_SOFT
             ox, oy = gx + (cell - size) / 2, gy + (cell - size) / 2
             out.append(f'<rect x="{ox:.1f}" y="{oy:.1f}" width="{size:.1f}" '
