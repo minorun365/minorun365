@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="./assets/banner.png" alt="みのるん（Minoru Onda）— AIエージェントと開発者向けツールを作っています" width="100%">
+<img src="./assets/banner-v2.png" alt="みのるん（Minoru Onda）— AIエージェントと開発者向けツールを作っています" width="100%">
 
 <p>
   <a href="https://minoruonda.com"><img src="https://img.shields.io/badge/Website-0a4695?style=flat" alt="Website"></a>
@@ -16,42 +16,30 @@
 <table>
   <tr>
     <td width="50%" valign="top">
-      <a href="https://github.com/minorun365/marp-agent">
-        <picture>
-          <source media="(prefers-color-scheme: dark)" srcset="./assets/cards/marp-agent-dark.png">
-          <img src="./assets/cards/marp-agent-light.png" width="100%" alt="パワポ作るマン ★114 TypeScript">
-        </picture>
-      </a>
-      <p>対話しながらスライドを自動生成するAIエージェント。<br><a href="https://pawapo.minoruonda.com/">使ってみる</a></p>
+      <h3><a href="https://github.com/minorun365/marp-agent">パワポ作るマン</a></h3>
+      <p>対話しながらスライドを自動生成するAIエージェント。</p>
+      <p><a href="https://pawapo.minoruonda.com/">使ってみる</a> · <a href="https://github.com/minorun365/marp-agent">ソースコード</a></p>
+      <p><img src="https://img.shields.io/github/stars/minorun365/marp-agent?style=flat&logo=github&logoColor=white&label=&color=0a4695&labelColor=0e0d6a" alt="スター数"></p>
     </td>
     <td width="50%" valign="top">
-      <a href="https://github.com/minorun365/html-share">
-        <picture>
-          <source media="(prefers-color-scheme: dark)" srcset="./assets/cards/html-share-dark.png">
-          <img src="./assets/cards/html-share-light.png" width="100%" alt="HTML共有くん ★24 HTML">
-        </picture>
-      </a>
+      <h3><a href="https://github.com/minorun365/html-share">HTML共有くん</a></h3>
       <p>Claude Codeが作ったHTMLを、スマホで確認・共有できるセルフホスト型ツール。</p>
+      <p><a href="https://github.com/minorun365/html-share">ソースコード</a></p>
+      <p><img src="https://img.shields.io/github/stars/minorun365/html-share?style=flat&logo=github&logoColor=white&label=&color=0a4695&labelColor=0e0d6a" alt="スター数"></p>
     </td>
   </tr>
   <tr>
     <td width="50%" valign="top">
-      <a href="https://github.com/minorun365/jirei-share-bot">
-        <picture>
-          <source media="(prefers-color-scheme: dark)" srcset="./assets/cards/jirei-share-bot-dark.png">
-          <img src="./assets/cards/jirei-share-bot-light.png" width="100%" alt="事例共有くん Python">
-        </picture>
-      </a>
+      <h3><a href="https://github.com/minorun365/jirei-share-bot">事例共有くん</a></h3>
       <p>Slackの会話から取り組み事例を登録し、意味検索と定期共有を行うボット。</p>
+      <p><a href="https://github.com/minorun365/jirei-share-bot">ソースコード</a></p>
+      <p><img src="https://img.shields.io/github/stars/minorun365/jirei-share-bot?style=flat&logo=github&logoColor=white&label=&color=0a4695&labelColor=0e0d6a" alt="スター数"></p>
     </td>
     <td width="50%" valign="top">
-      <a href="https://github.com/minorun365/live-dictation">
-        <picture>
-          <source media="(prefers-color-scheme: dark)" srcset="./assets/cards/live-dictation-dark.png">
-          <img src="./assets/cards/live-dictation-light.png" width="100%" alt="文字起こしちゃん ★6 Swift">
-        </picture>
-      </a>
-      <p>会議音声をMac内で文字起こし・要約し、英語から日本語への翻訳にも対応するmacOSアプリ。<br><a href="https://github.com/minorun365/live-dictation/releases/latest">ダウンロード</a></p>
+      <h3><a href="https://github.com/minorun365/live-dictation">文字起こしちゃん</a></h3>
+      <p>会議音声をMac内で文字起こし・要約し、英語から日本語への翻訳にも対応するmacOSアプリ。</p>
+      <p><a href="https://github.com/minorun365/live-dictation/releases/latest">ダウンロード</a> · <a href="https://github.com/minorun365/live-dictation">ソースコード</a></p>
+      <p><img src="https://img.shields.io/github/stars/minorun365/live-dictation?style=flat&logo=github&logoColor=white&label=&color=0a4695&labelColor=0e0d6a" alt="スター数"></p>
     </td>
   </tr>
 </table>
@@ -61,22 +49,14 @@
 <table>
   <tr>
     <td width="50%" valign="top">
-      <a href="https://github.com/minorun365/my-claude-code-settings">
-        <picture>
-          <source media="(prefers-color-scheme: dark)" srcset="./assets/cards/my-claude-code-settings-dark.png">
-          <img src="./assets/cards/my-claude-code-settings-light.png" width="100%" alt="Claude Code設定 ★97 Shell">
-        </picture>
-      </a>
+      <h3><a href="https://github.com/minorun365/my-claude-code-settings">Claude Code設定</a></h3>
       <p>ルール、スキル、フックを含む、普段使っているClaude Code設定の公開版。</p>
+      <p><img src="https://img.shields.io/github/stars/minorun365/my-claude-code-settings?style=flat&logo=github&logoColor=white&label=&color=0a4695&labelColor=0e0d6a" alt="スター数"></p>
     </td>
     <td width="50%" valign="top">
-      <a href="https://github.com/minorun365/agentcore-push">
-        <picture>
-          <source media="(prefers-color-scheme: dark)" srcset="./assets/cards/agentcore-push-dark.png">
-          <img src="./assets/cards/agentcore-push-light.png" width="100%" alt="agentcore-push ★5 Python">
-        </picture>
-      </a>
+      <h3><a href="https://github.com/minorun365/agentcore-push">agentcore-push</a></h3>
       <p>1ファイルのStrands AgentをBedrock AgentCore Runtimeへデプロイするコマンドラインツール。</p>
+      <p><img src="https://img.shields.io/github/stars/minorun365/agentcore-push?style=flat&logo=github&logoColor=white&label=&color=0a4695&labelColor=0e0d6a" alt="スター数"></p>
     </td>
   </tr>
 </table>
@@ -87,36 +67,21 @@
 
 <table>
   <tr>
-    <td width="50%" valign="top">
-      <a href="https://github.com/minorun365/agent-book">
-        <picture>
-          <source media="(prefers-color-scheme: dark)" srcset="./assets/cards/agent-book-dark.png">
-          <img src="./assets/cards/agent-book-light.png" width="100%" alt="AIエージェント開発/運用入門 ★157 Python">
-        </picture>
-      </a>
+    <td width="33%" valign="top">
+      <h3><a href="https://github.com/minorun365/agent-book">AIエージェント開発/運用入門</a></h3>
       <p>SBクリエイティブ · 2025年10月</p>
+      <p><img src="https://img.shields.io/github/stars/minorun365/agent-book?style=flat&logo=github&logoColor=white&label=&color=0a4695&labelColor=0e0d6a" alt="スター数"></p>
     </td>
-    <td width="50%" valign="top">
-      <a href="https://github.com/minorun365/bedrock-book">
-        <picture>
-          <source media="(prefers-color-scheme: dark)" srcset="./assets/cards/bedrock-book-dark.png">
-          <img src="./assets/cards/bedrock-book-light.png" width="100%" alt="Amazon Bedrock 生成AIアプリ開発入門 ★133 Python">
-        </picture>
-      </a>
+    <td width="33%" valign="top">
+      <h3><a href="https://github.com/minorun365/bedrock-book">Amazon Bedrock 生成AIアプリ開発入門</a></h3>
       <p>SBクリエイティブ · 2024年6月</p>
+      <p><img src="https://img.shields.io/github/stars/minorun365/bedrock-book?style=flat&logo=github&logoColor=white&label=&color=0a4695&labelColor=0e0d6a" alt="スター数"></p>
     </td>
-  </tr>
-  <tr>
-    <td width="50%" valign="top">
-      <a href="https://github.com/minorun365/agentcore-book">
-        <picture>
-          <source media="(prefers-color-scheme: dark)" srcset="./assets/cards/agentcore-book-dark.png">
-          <img src="./assets/cards/agentcore-book-light.png" width="100%" alt="Amazon Bedrock AgentCore実践入門 ★42 Python">
-        </picture>
-      </a>
+    <td width="33%" valign="top">
+      <h3><a href="https://github.com/minorun365/agentcore-book">Amazon Bedrock AgentCore実践入門</a></h3>
       <p>SBクリエイティブ · 2026年5月</p>
+      <p><img src="https://img.shields.io/github/stars/minorun365/agentcore-book?style=flat&logo=github&logoColor=white&label=&color=0a4695&labelColor=0e0d6a" alt="スター数"></p>
     </td>
-    <td width="50%" valign="top"></td>
   </tr>
 </table>
 

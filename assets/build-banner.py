@@ -115,8 +115,10 @@ def build_svg():
 
 def main():
     here = pathlib.Path(__file__).resolve().parent
+    # ⚠️ 同じファイル名で中身だけ差し替えると、GitHub や閲覧者のブラウザが
+    #    古い画像をキャッシュから返し続ける。見た目を変えたらファイル名も上げる。
     svg_path = here / "banner.svg"
-    png_path = here / "banner.png"
+    png_path = here / "banner-v2.png"
     svg_path.write_text(build_svg())
     subprocess.run(["rsvg-convert", "-w", str(W), "-h", str(H),
                     "-o", str(png_path), str(svg_path)], check=True)
