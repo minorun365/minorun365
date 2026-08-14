@@ -16,7 +16,7 @@ import random
 import subprocess
 import sys
 
-W, H = 1600, 420
+W, H = 1600, 400
 
 NAVY = "#052a5a"
 BLUE = "#0a4695"
@@ -58,7 +58,7 @@ def diagonal_wave(seed=41, cell=46):
     for gy in range(-cell, H + cell, cell):
         for gx in range(0, W + cell, cell):
             # 中心線は左下→右上。sin の揺れで直線的にしない。
-            line_y = 500 - 0.28 * gx + 38 * math.sin(gx / 210 + 1.1)
+            line_y = 486 - 0.28 * gx + 38 * math.sin(gx / 210 + 1.1)
             band = max(0.0, 1.0 - abs(gy - line_y) / 205)
             if band <= 0:
                 continue
@@ -102,12 +102,11 @@ def build_svg():
 {diagonal_wave()}
 <rect width="{W}" height="{H}" fill="url(#veil)"/>
 
-<text class="en"   x="104" y="118" font-size="30">MINORU ONDA</text>
-<text class="name" x="100" y="228" font-size="86">みのるん</text>
-<text class="id"   x="480" y="226" font-size="32">@minorun365</text>
-<rect x="103" y="264" width="96" height="6" rx="3" fill="{GOLD}"/>
-<text class="lead" x="103" y="318" font-size="27">AIエージェントと、仕事を楽しくする開発者向けツールを作っています。</text>
-<text class="role" x="103" y="362" font-size="21">KDDIアジャイル開発センター テックエバンジェリスト　/　AWS AI Hero</text>
+<text class="en"   x="104" y="112" font-size="32">MINORU ONDA</text>
+<text class="name" x="100" y="238" font-size="104">みのるん</text>
+<text class="id"   x="540" y="236" font-size="38">@minorun365</text>
+<rect x="103" y="278" width="104" height="7" rx="3.5" fill="{GOLD}"/>
+<text class="lead" x="103" y="342" font-size="38">AIエージェントと開発者向けツールを作っています</text>
 </svg>
 '''
 
