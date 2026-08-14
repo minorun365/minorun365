@@ -1,0 +1,2 @@
+# build-banner.py が PNG を作る途中で書き出す中間ファイル
+assets/banner.svg
