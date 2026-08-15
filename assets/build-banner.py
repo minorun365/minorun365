@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""GitHub プロフィール README のヘッダーバナー（1600x420）を作る。
+"""GitHub プロフィール README のヘッダーバナー（1600x400）を作る。
 
   python3 assets/build-banner.py
 
@@ -23,8 +23,6 @@ BLUE = "#0a4695"
 BLUE_MID = "#0862aa"
 BLUE_BRIGHT = "#01b6ec"
 ACCENT_SOFT = "#d8f5ff"
-SILVER = "#d9e1e8"
-GOLD = "#f0b21f"
 
 
 def lerp(a, b, t):
@@ -81,6 +79,20 @@ def diagonal_wave(seed=41, cell=46):
     return "\n".join(out)
 
 
+# ── 名前ブロックを上下中央へ置くための計算 ───────────────────────
+# ベースラインは文字の下端なので、それをキャンバス中心に合わせると全体が上へ寄る。
+# 「英字の視覚的な上端」から「かなの視覚的な下端」までを1つの塊とみなし、
+# その中点が H/2 に来るようベースラインを逆算する。
+EN_FS, NAME_FS = 32, 104
+GAP = 126                      # 英字と名前のベースライン間隔
+CAP = EN_FS * 0.72             # 英大文字の高さ（ベースラインから上）
+DESC = NAME_FS * 0.08          # かなが少しだけベースラインより下へ出る分
+BLOCK = CAP + GAP + DESC       # 塊全体の視覚的な高さ
+EN_Y = round((H - BLOCK) / 2 + CAP)
+NAME_Y = EN_Y + GAP
+ID_Y = NAME_Y - 2              # ハンドルは名前とほぼ同じ行に乗せる
+
+
 def build_svg():
     return f'''<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" viewBox="0 0 {W} {H}">
 <defs>
@@ -97,18 +109,14 @@ def build_svg():
   .en   {{ font-family: "Helvetica Neue",Arial,sans-serif; font-weight: 700; letter-spacing: 7px; fill: {ACCENT_SOFT}; }}
   .name {{ font-family: "Hiragino Sans","Hiragino Kaku Gothic ProN",sans-serif; font-weight: 800; fill: #fff; }}
   .id   {{ font-family: "Helvetica Neue",Arial,sans-serif; font-weight: 700; fill: #fff; opacity: .88; }}
-  .lead {{ font-family: "Hiragino Sans","Hiragino Kaku Gothic ProN",sans-serif; font-weight: 600; fill: #fff; opacity: .93; }}
-  .role {{ font-family: "Hiragino Sans","Hiragino Kaku Gothic ProN",sans-serif; font-weight: 600; fill: {ACCENT_SOFT}; }}
 </style>
 <rect width="{W}" height="{H}" fill="url(#bg)"/>
 {diagonal_wave()}
 <rect width="{W}" height="{H}" fill="url(#veil)"/>
 
-<text class="en"   x="104" y="112" font-size="32">MINORU ONDA</text>
-<text class="name" x="100" y="238" font-size="104">みのるん</text>
-<text class="id"   x="540" y="236" font-size="38">@minorun365</text>
-<rect x="103" y="278" width="104" height="7" rx="3.5" fill="{GOLD}"/>
-<text class="lead" x="103" y="342" font-size="38">AIエージェントと開発者向けツールを作っています</text>
+<text class="en"   x="104" y="{EN_Y}" font-size="{EN_FS}">MINORU ONDA</text>
+<text class="name" x="100" y="{NAME_Y}" font-size="{NAME_FS}">みのるん</text>
+<text class="id"   x="540" y="{ID_Y}" font-size="38">@minorun365</text>
 </svg>
 '''
 
@@ -118,7 +126,7 @@ def main():
     # ⚠️ 同じファイル名で中身だけ差し替えると、GitHub や閲覧者のブラウザが
     #    古い画像をキャッシュから返し続ける。見た目を変えたらファイル名も上げる。
     svg_path = here / "banner.svg"
-    png_path = here / "banner-v2.png"
+    png_path = here / "banner-v3.png"
     svg_path.write_text(build_svg())
     subprocess.run(["rsvg-convert", "-w", str(W), "-h", str(H),
                     "-o", str(png_path), str(svg_path)], check=True)

@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="./assets/banner-v2.png" alt="みのるん（Minoru Onda）— AIエージェントと開発者向けツールを作っています" width="100%">
+<img src="./assets/banner-v3.png" alt="みのるん（Minoru Onda）@minorun365" width="100%">
 
 <p>
   <a href="https://minoruonda.com"><img src="https://img.shields.io/badge/Website-0a4695?style=flat" alt="Website"></a>
