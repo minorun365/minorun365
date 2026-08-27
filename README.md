@@ -42,6 +42,20 @@
       <p><img src="https://img.shields.io/github/stars/minorun365/live-dictation?style=flat&logo=github&logoColor=white&label=&color=0a4695&labelColor=0e0d6a" alt="スター数"></p>
     </td>
   </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <h3><a href="https://github.com/minorun365/m365-agent">M365秘書AIエージェント</a></h3>
+      <p>チャットで頼むと、Outlook・Microsoft To Do・Confluenceを操作してくれる秘書アプリ。</p>
+      <p><a href="https://github.com/minorun365/m365-agent">ソースコード</a></p>
+      <p><img src="https://img.shields.io/github/stars/minorun365/m365-agent?style=flat&logo=github&logoColor=white&label=&color=0a4695&labelColor=0e0d6a" alt="スター数"></p>
+    </td>
+    <td width="50%" valign="top">
+      <h3><a href="https://github.com/minorun365/agentcore-line-chatbot">LINEチャットボット</a></h3>
+      <p>LINEで動くAIチャットボット。ツール実行中の途中経過も吹き出しで流れる。</p>
+      <p><a href="https://github.com/minorun365/agentcore-line-chatbot">ソースコード</a></p>
+      <p><img src="https://img.shields.io/github/stars/minorun365/agentcore-line-chatbot?style=flat&logo=github&logoColor=white&label=&color=0a4695&labelColor=0e0d6a" alt="スター数"></p>
+    </td>
+  </tr>
 </table>
 
 ## 開発ツール
