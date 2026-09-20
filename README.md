@@ -58,7 +58,7 @@
   </tr>
 </table>
 
-## スキル（Agent Skills）
+## ツール
 
 <table>
   <tr>
@@ -75,11 +75,6 @@
       <p><img src="https://img.shields.io/github/stars/minorun365/minorun-marp-skill?style=flat&logo=github&logoColor=white&label=&color=0a4695&labelColor=0e0d6a" alt="スター数"></p>
     </td>
   </tr>
-</table>
-
-## 開発ツール
-
-<table>
   <tr>
     <td width="50%" valign="top">
       <h3><a href="https://github.com/minorun365/my-claude-code-settings">Claude Code設定</a></h3>
