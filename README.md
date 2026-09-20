@@ -58,6 +58,25 @@
   </tr>
 </table>
 
+## スキル
+
+<table>
+  <tr>
+    <td width="50%" valign="top">
+      <h3><a href="https://github.com/minorun365/agent-builder-skills">AIエージェント開発スキル</a></h3>
+      <p>AWSでAIエージェントのWebアプリを作るときに、公式どおりでも詰まる所をまとめたスキル集。AgentCore・Strands Agents・CDKに対応。</p>
+      <p><a href="https://github.com/minorun365/agent-builder-skills">ソースコード</a></p>
+      <p><img src="https://img.shields.io/github/stars/minorun365/agent-builder-skills?style=flat&logo=github&logoColor=white&label=&color=0a4695&labelColor=0e0d6a" alt="スター数"></p>
+    </td>
+    <td width="50%" valign="top">
+      <h3><a href="https://github.com/minorun365/minorun-marp-skill">登壇スライド作成スキル</a></h3>
+      <p>Marpで登壇スライドを作るときの、ストーリー・図・余白の型。黒地のテーマと、書き出したPDFを実測する検査ツールつき。</p>
+      <p><a href="https://github.com/minorun365/minorun-marp-skill">ソースコード</a></p>
+      <p><img src="https://img.shields.io/github/stars/minorun365/minorun-marp-skill?style=flat&logo=github&logoColor=white&label=&color=0a4695&labelColor=0e0d6a" alt="スター数"></p>
+    </td>
+  </tr>
+</table>
+
 ## 開発ツール
 
 <table>
