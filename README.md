@@ -58,7 +58,7 @@
   </tr>
 </table>
 
-## スキル
+## スキル（Agent Skills）
 
 <table>
   <tr>
