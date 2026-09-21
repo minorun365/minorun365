@@ -18,13 +18,11 @@
     <td width="50%" valign="top">
       <h3><a href="https://github.com/minorun365/marp-agent">パワポ作るマン</a></h3>
       <p>対話しながらスライドを自動生成するAIエージェント。</p>
-      <p><a href="https://pawapo.minoruonda.com/">使ってみる</a> · <a href="https://github.com/minorun365/marp-agent">ソースコード</a></p>
       <p><img src="https://img.shields.io/github/stars/minorun365/marp-agent?style=flat&logo=github&logoColor=white&label=&color=0a4695&labelColor=0e0d6a" alt="スター数"></p>
     </td>
     <td width="50%" valign="top">
       <h3><a href="https://github.com/minorun365/html-share">HTML共有くん</a></h3>
       <p>Claude Codeが作ったHTMLを、スマホで確認・共有できるセルフホスト型ツール。</p>
-      <p><a href="https://github.com/minorun365/html-share">ソースコード</a></p>
       <p><img src="https://img.shields.io/github/stars/minorun365/html-share?style=flat&logo=github&logoColor=white&label=&color=0a4695&labelColor=0e0d6a" alt="スター数"></p>
     </td>
   </tr>
@@ -32,13 +30,11 @@
     <td width="50%" valign="top">
       <h3><a href="https://github.com/minorun365/jirei-share-bot">事例共有くん</a></h3>
       <p>Slackの会話から取り組み事例を登録し、意味検索と定期共有を行うボット。</p>
-      <p><a href="https://github.com/minorun365/jirei-share-bot">ソースコード</a></p>
       <p><img src="https://img.shields.io/github/stars/minorun365/jirei-share-bot?style=flat&logo=github&logoColor=white&label=&color=0a4695&labelColor=0e0d6a" alt="スター数"></p>
     </td>
     <td width="50%" valign="top">
       <h3><a href="https://github.com/minorun365/live-dictation">文字起こしちゃん</a></h3>
       <p>会議音声をMac内で文字起こし・要約し、英語から日本語への翻訳にも対応するmacOSアプリ。</p>
-      <p><a href="https://github.com/minorun365/live-dictation/releases/latest">ダウンロード</a> · <a href="https://github.com/minorun365/live-dictation">ソースコード</a></p>
       <p><img src="https://img.shields.io/github/stars/minorun365/live-dictation?style=flat&logo=github&logoColor=white&label=&color=0a4695&labelColor=0e0d6a" alt="スター数"></p>
     </td>
   </tr>
@@ -46,13 +42,11 @@
     <td width="50%" valign="top">
       <h3><a href="https://github.com/minorun365/m365-agent">M365秘書AIエージェント</a></h3>
       <p>チャットで頼むと、Outlook・Microsoft To Do・Confluenceを操作してくれる秘書アプリ。</p>
-      <p><a href="https://github.com/minorun365/m365-agent">ソースコード</a></p>
       <p><img src="https://img.shields.io/github/stars/minorun365/m365-agent?style=flat&logo=github&logoColor=white&label=&color=0a4695&labelColor=0e0d6a" alt="スター数"></p>
     </td>
     <td width="50%" valign="top">
       <h3><a href="https://github.com/minorun365/agentcore-line-chatbot">LINE AIエージェント</a></h3>
       <p>LINEで動くAIチャットボット。ツール実行中の途中経過も吹き出しで流れる。</p>
-      <p><a href="https://github.com/minorun365/agentcore-line-chatbot">ソースコード</a></p>
       <p><img src="https://img.shields.io/github/stars/minorun365/agentcore-line-chatbot?style=flat&logo=github&logoColor=white&label=&color=0a4695&labelColor=0e0d6a" alt="スター数"></p>
     </td>
   </tr>
@@ -65,13 +59,11 @@
     <td width="50%" valign="top">
       <h3><a href="https://github.com/minorun365/agent-builder-skills">AIエージェント開発スキル</a></h3>
       <p>AWSでAIエージェントのWebアプリを作るときに、公式どおりでも詰まる所をまとめたスキル集。AgentCore・Strands Agents・CDKに対応。</p>
-      <p><a href="https://github.com/minorun365/agent-builder-skills">ソースコード</a></p>
       <p><img src="https://img.shields.io/github/stars/minorun365/agent-builder-skills?style=flat&logo=github&logoColor=white&label=&color=0a4695&labelColor=0e0d6a" alt="スター数"></p>
     </td>
     <td width="50%" valign="top">
       <h3><a href="https://github.com/minorun365/minorun-marp-skill">登壇スライド作成スキル</a></h3>
       <p>Marpで登壇スライドを作るときの、ストーリー・図・余白の型。黒地のテーマと、書き出したPDFを実測する検査ツールつき。</p>
-      <p><a href="https://github.com/minorun365/minorun-marp-skill">ソースコード</a></p>
       <p><img src="https://img.shields.io/github/stars/minorun365/minorun-marp-skill?style=flat&logo=github&logoColor=white&label=&color=0a4695&labelColor=0e0d6a" alt="スター数"></p>
     </td>
   </tr>
