@@ -11,6 +11,35 @@
 
 </div>
 
+## ツール
+
+<table>
+  <tr>
+    <td width="50%" valign="top">
+      <h3><a href="https://github.com/minorun365/minorun-marp-skill">登壇スライド作成スキル</a></h3>
+      <p>Marpで登壇スライドを作るときの、ストーリー・図・余白の型。黒地のテーマと、書き出したPDFを実測する検査ツールつき。</p>
+      <p><img src="https://img.shields.io/github/stars/minorun365/minorun-marp-skill?style=flat&logo=github&logoColor=white&label=&color=0a4695&labelColor=0e0d6a" alt="スター数"></p>
+    </td>
+    <td width="50%" valign="top">
+      <h3><a href="https://github.com/minorun365/claude-code-japanese-guard">Claude Code日本語ガード</a></h3>
+      <p>Claude Code の応答が英語に切り替わったら、日本語で書き直させる Stop hook。</p>
+      <p><img src="https://img.shields.io/github/stars/minorun365/claude-code-japanese-guard?style=flat&logo=github&logoColor=white&label=&color=0a4695&labelColor=0e0d6a" alt="スター数"></p>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <h3><a href="https://github.com/minorun365/my-claude-code-settings">Claude Code設定</a></h3>
+      <p>ルール、スキル、フックを含む、普段使っているClaude Code設定の公開版。</p>
+      <p><img src="https://img.shields.io/github/stars/minorun365/my-claude-code-settings?style=flat&logo=github&logoColor=white&label=&color=0a4695&labelColor=0e0d6a" alt="スター数"></p>
+    </td>
+    <td width="50%" valign="top">
+      <h3><a href="https://github.com/minorun365/agent-builder-skills">AIエージェント開発スキル</a></h3>
+      <p>AWSでAIエージェントのWebアプリを作るときに、公式どおりでも詰まる所をまとめたスキル集。AgentCore・Strands Agents・CDKに対応。</p>
+      <p><img src="https://img.shields.io/github/stars/minorun365/agent-builder-skills?style=flat&logo=github&logoColor=white&label=&color=0a4695&labelColor=0e0d6a" alt="スター数"></p>
+    </td>
+  </tr>
+</table>
+
 ## アプリ
 
 <table>
@@ -28,14 +57,14 @@
   </tr>
   <tr>
     <td width="50%" valign="top">
-      <h3><a href="https://github.com/minorun365/jirei-share-bot">事例共有くん</a></h3>
-      <p>Slackの会話から取り組み事例を登録し、意味検索と定期共有を行うボット。</p>
-      <p><img src="https://img.shields.io/github/stars/minorun365/jirei-share-bot?style=flat&logo=github&logoColor=white&label=&color=0a4695&labelColor=0e0d6a" alt="スター数"></p>
-    </td>
-    <td width="50%" valign="top">
       <h3><a href="https://github.com/minorun365/live-dictation">文字起こしちゃん</a></h3>
       <p>会議音声をMac内で文字起こし・要約し、英語から日本語への翻訳にも対応するmacOSアプリ。</p>
       <p><img src="https://img.shields.io/github/stars/minorun365/live-dictation?style=flat&logo=github&logoColor=white&label=&color=0a4695&labelColor=0e0d6a" alt="スター数"></p>
+    </td>
+    <td width="50%" valign="top">
+      <h3><a href="https://github.com/minorun365/sleep-toggle-menu">スリープ切替メニュー</a></h3>
+      <p>MacBookのスリープ可否をメニューバーから切り替えるmacOSアプリ。</p>
+      <p><img src="https://img.shields.io/github/stars/minorun365/sleep-toggle-menu?style=flat&logo=github&logoColor=white&label=&color=0a4695&labelColor=0e0d6a" alt="スター数"></p>
     </td>
   </tr>
   <tr>
@@ -48,35 +77,6 @@
       <h3><a href="https://github.com/minorun365/agentcore-line-chatbot">LINE AIエージェント</a></h3>
       <p>LINEで動くAIチャットボット。ツール実行中の途中経過も吹き出しで流れる。</p>
       <p><img src="https://img.shields.io/github/stars/minorun365/agentcore-line-chatbot?style=flat&logo=github&logoColor=white&label=&color=0a4695&labelColor=0e0d6a" alt="スター数"></p>
-    </td>
-  </tr>
-</table>
-
-## ツール
-
-<table>
-  <tr>
-    <td width="50%" valign="top">
-      <h3><a href="https://github.com/minorun365/agent-builder-skills">AIエージェント開発スキル</a></h3>
-      <p>AWSでAIエージェントのWebアプリを作るときに、公式どおりでも詰まる所をまとめたスキル集。AgentCore・Strands Agents・CDKに対応。</p>
-      <p><img src="https://img.shields.io/github/stars/minorun365/agent-builder-skills?style=flat&logo=github&logoColor=white&label=&color=0a4695&labelColor=0e0d6a" alt="スター数"></p>
-    </td>
-    <td width="50%" valign="top">
-      <h3><a href="https://github.com/minorun365/minorun-marp-skill">登壇スライド作成スキル</a></h3>
-      <p>Marpで登壇スライドを作るときの、ストーリー・図・余白の型。黒地のテーマと、書き出したPDFを実測する検査ツールつき。</p>
-      <p><img src="https://img.shields.io/github/stars/minorun365/minorun-marp-skill?style=flat&logo=github&logoColor=white&label=&color=0a4695&labelColor=0e0d6a" alt="スター数"></p>
-    </td>
-  </tr>
-  <tr>
-    <td width="50%" valign="top">
-      <h3><a href="https://github.com/minorun365/my-claude-code-settings">Claude Code設定</a></h3>
-      <p>ルール、スキル、フックを含む、普段使っているClaude Code設定の公開版。</p>
-      <p><img src="https://img.shields.io/github/stars/minorun365/my-claude-code-settings?style=flat&logo=github&logoColor=white&label=&color=0a4695&labelColor=0e0d6a" alt="スター数"></p>
-    </td>
-    <td width="50%" valign="top">
-      <h3><a href="https://github.com/minorun365/agentcore-push">agentcore-push</a></h3>
-      <p>1ファイルのStrands AgentをBedrock AgentCore Runtimeへデプロイするコマンドラインツール。</p>
-      <p><img src="https://img.shields.io/github/stars/minorun365/agentcore-push?style=flat&logo=github&logoColor=white&label=&color=0a4695&labelColor=0e0d6a" alt="スター数"></p>
     </td>
   </tr>
 </table>
@@ -105,7 +105,7 @@
   </tr>
 </table>
 
-このほかに『やさしいMCP入門』（秀和システム）、『［入門］LLMアプリ開発』『MastraによるAIエージェント開発・運用［実践入門］』（技術評論社）があります。2026年9月には『［みのるん式］ビジネスパーソンのためのClaude Code仕事術』（技術評論社）が出ます。
+このほかに『［みのるん式］ビジネスパーソンのためのClaude Code仕事術』『［入門］LLMアプリ開発』『MastraによるAIエージェント開発・運用［実践入門］』（技術評論社）、『やさしいMCP入門』（秀和システム）があります。
 
 ## 認定・受賞
 
