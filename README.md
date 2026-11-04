@@ -62,16 +62,16 @@
       <p><img src="https://img.shields.io/github/stars/minorun365/live-dictation?style=flat&logo=github&logoColor=white&label=&color=0a4695&labelColor=0e0d6a" alt="スター数"></p>
     </td>
     <td width="50%" valign="top">
-      <h3><a href="https://github.com/minorun365/sleep-toggle-menu">スリープ切替メニュー</a></h3>
-      <p>MacBookのスリープ可否をメニューバーから切り替えるmacOSアプリ。</p>
-      <p><img src="https://img.shields.io/github/stars/minorun365/sleep-toggle-menu?style=flat&logo=github&logoColor=white&label=&color=0a4695&labelColor=0e0d6a" alt="スター数"></p>
+      <h3><a href="https://github.com/minorun365/live-advisor">助言さん</a></h3>
+      <p>文字起こしちゃんの文字起こしを読み、会議中に調査結果と議論の進め方の提案をメニューバーへ出すmacOSアプリ。</p>
+      <p><img src="https://img.shields.io/github/stars/minorun365/live-advisor?style=flat&logo=github&logoColor=white&label=&color=0a4695&labelColor=0e0d6a" alt="スター数"></p>
     </td>
   </tr>
   <tr>
     <td width="50%" valign="top">
-      <h3><a href="https://github.com/minorun365/m365-agent">M365秘書AIエージェント</a></h3>
-      <p>チャットで頼むと、Outlook・Microsoft To Do・Confluenceを操作してくれる秘書アプリ。</p>
-      <p><img src="https://img.shields.io/github/stars/minorun365/m365-agent?style=flat&logo=github&logoColor=white&label=&color=0a4695&labelColor=0e0d6a" alt="スター数"></p>
+      <h3><a href="https://github.com/minorun365/sleep-toggle-menu">スリープ切替メニュー</a></h3>
+      <p>MacBookのスリープ可否をメニューバーから切り替えるmacOSアプリ。</p>
+      <p><img src="https://img.shields.io/github/stars/minorun365/sleep-toggle-menu?style=flat&logo=github&logoColor=white&label=&color=0a4695&labelColor=0e0d6a" alt="スター数"></p>
     </td>
     <td width="50%" valign="top">
       <h3><a href="https://github.com/minorun365/agentcore-line-chatbot">LINE AIエージェント</a></h3>
