@@ -69,9 +69,9 @@
   </tr>
   <tr>
     <td width="50%" valign="top">
-      <h3><a href="https://github.com/minorun365/sleep-toggle-menu">スリープ切替メニュー</a></h3>
-      <p>MacBookのスリープ可否をメニューバーから切り替えるmacOSアプリ。</p>
-      <p><img src="https://img.shields.io/github/stars/minorun365/sleep-toggle-menu?style=flat&logo=github&logoColor=white&label=&color=0a4695&labelColor=0e0d6a" alt="スター数"></p>
+      <h3><a href="https://github.com/minorun365/minorun-agent">みのるんエージェント</a></h3>
+      <p>AWS re:Invent 2026に日本から参加する人の質問に、日本語で答えるAIエージェント。</p>
+      <p><img src="https://img.shields.io/github/stars/minorun365/minorun-agent?style=flat&logo=github&logoColor=white&label=&color=0a4695&labelColor=0e0d6a" alt="スター数"></p>
     </td>
     <td width="50%" valign="top">
       <h3><a href="https://github.com/minorun365/agentcore-line-chatbot">LINE AIエージェント</a></h3>
