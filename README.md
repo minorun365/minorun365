@@ -21,7 +21,7 @@
       <p><img src="https://img.shields.io/github/stars/minorun365/minorun-marp-skill?style=flat&logo=github&logoColor=white&label=&color=0a4695&labelColor=0e0d6a" alt="スター数"></p>
     </td>
     <td width="50%" valign="top">
-      <h3><a href="https://github.com/minorun365/claude-code-japanese-guard">Claude Code日本語ガード</a></h3>
+      <h3><a href="https://github.com/minorun365/claude-code-japanese-guard">日本語でおｋ</a></h3>
       <p>Claude Code の応答が英語に切り替わったら、日本語で書き直させる Stop hook。</p>
       <p><img src="https://img.shields.io/github/stars/minorun365/claude-code-japanese-guard?style=flat&logo=github&logoColor=white&label=&color=0a4695&labelColor=0e0d6a" alt="スター数"></p>
     </td>
