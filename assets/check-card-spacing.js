@@ -85,7 +85,23 @@ function rendered() {
     if (why.length) ng++;
     console.log(`${why.length ? 'NG' : 'OK'}  上${r.上} 下${r.下} 左${r.左} 右${r.右} 絵上${r.絵上} 絵間${r.絵間}  ${r.name}  ${why.join('・')}`);
   }
-  if (out) await (await page.$('article.markdown-body')).screenshot({ path: out });
+  if (out) {
+    // 追従する帯（タブの列など）が README の上へ重なったまま写るので、撮る前に流し込みへ戻す。
+    // README の枠には内側の余白があるので、要素そのものではなく枠ごと撮る。
+    const info = await page.evaluate(() => {
+      for (const el of document.querySelectorAll('*')) {
+        const p = getComputedStyle(el).position;
+        if (p === 'sticky' || p === 'fixed') el.style.position = 'static';
+      }
+      const art = document.querySelector('article.markdown-body');
+      const box = art.closest('.Box, [class*="Box"]') || art.parentElement;
+      box.setAttribute('data-shot', '1');
+      const a = art.getBoundingClientRect(), b = box.getBoundingClientRect(), img = art.querySelector('img').getBoundingClientRect();
+      return { 枠から本文: [Math.round(a.left - b.left), Math.round(a.top - b.top)], バナー: [Math.round(img.left - b.left), Math.round(img.top - b.top), Math.round(b.right - img.right)] };
+    });
+    console.log(JSON.stringify(info));
+    await (await page.$('[data-shot]')).screenshot({ path: out });
+  }
   await browser.close();
   console.log(ng ? `NG ${ng}/${rows.length} セル` : `OK ${rows.length} セルの余白がそろっている`);
   process.exit(ng ? 1 : 0);
