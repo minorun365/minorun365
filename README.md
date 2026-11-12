@@ -33,9 +33,9 @@
       <p><img src="https://img.shields.io/github/stars/minorun365/claude-code-japanese-guard?style=flat&logo=github&logoColor=white&label=&color=0a4695&labelColor=0e0d6a" alt="スター数"><br><br></p>
     </td>
     <td width="50%" valign="top">
-      <h3><img align="right" width="117" src="./assets/cards/my-claude-code-settings.png" alt=""><a href="https://github.com/minorun365/my-claude-code-settings">Claude Code設定</a></h3>
-      <p>ルール、スキル、フックを含む、普段使っているClaude Code設定の公開版。</p>
-      <p><img src="https://img.shields.io/github/stars/minorun365/my-claude-code-settings?style=flat&logo=github&logoColor=white&label=&color=0a4695&labelColor=0e0d6a" alt="スター数"><br><br></p>
+      <h3><img align="right" width="117" src="./assets/cards/unslop-ai-app.png" alt=""><a href="https://github.com/minorun365/unslop-ai-app">AI臭くないアプリ作成スキル</a></h3>
+      <p>Webアプリの画面を「AIが作った感じ」にしないための規則と検査スクリプト。</p>
+      <p><img src="https://img.shields.io/github/stars/minorun365/unslop-ai-app?style=flat&logo=github&logoColor=white&label=&color=0a4695&labelColor=0e0d6a" alt="スター数"><br><br></p>
     </td>
   </tr>
 </table>
@@ -116,6 +116,7 @@
 | Japan AWS Top Engineers | 2024・2025・2026 | 3年連続 |
 | Qiita 年間TOP Contributor | 2024・2025 | 2年連続（5位・4位） |
 | Developers Summit ベストスピーカー1位 | 2026 | Day2・Day3の部門1位 |
+| ITエンジニア本大賞 技術書部門 ベスト10 | 2025・2026 | 2年連続 |
 | AWS Samurai | 2023・2024 | JAWS-UGのコミュニティ貢献表彰 |
 
 <div align="center">
