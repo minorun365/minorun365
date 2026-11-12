@@ -12,11 +12,12 @@
 //   上   … 一番上にある中身（題か挿絵）まで
 //   下   … 一番下にある中身（スター数）から
 //   左   … 文字の左端まで
-//   右   … 挿絵の右端から
+//   右   … 挿絵の見える右端から（上と同じ値にする）
 //   絵上 … 挿絵の上端と題の文字の上端の差（0 に近いほど頭がそろう）
 //   絵間 … 文字と挿絵のいちばん狭い隙間
 // セルの左右の余白（14px）と見出しの上マージン（上31px）は GitHub 側の固定値で、README からは変えられない。
-// そのため「上と下」「左と右」をそれぞれそろえ、挿絵の頭を題にそろえ、絵と文字を14px以上離す、を合格条件にする。
+// そのため「上と下」をそろえ、角に置く挿絵は上の余白と右の余白をそろえ（右14pxのままだと絵だけ縁に寄って見える）、
+// 挿絵の頭を題にそろえ、絵と文字を14px以上離す、を合格条件にする。文字の左14pxは固定値のまま。
 const fs = require('fs');
 const path = require('path');
 const { execFileSync } = require('child_process');
@@ -56,7 +57,7 @@ function rendered() {
       const top = Math.min(title.top, i ? i.top : 1e9) - c.top;
       const bottom = c.bottom - Math.max(...kids.map(r => r.bottom), i ? i.bottom : 0);
       const left = Math.min(...kids.map(r => r.left)) - c.left;
-      const right = i ? c.right - i.right : null;
+      const right = i ? c.right - (i.right - 17) : null;   // 台紙の右17pxは透明。見える右端で測る
       const lines = [];
       const w = document.createTreeWalker(td, NodeFilter.SHOW_TEXT);
       for (let n = w.nextNode(); n; n = w.nextNode()) {
@@ -66,7 +67,16 @@ function rendered() {
       // 挿絵の台紙は左に16pxの透明な余白を持つので、見える左端は i.left + 16
       const beside = i ? lines.filter(r => r.bottom > i.top && r.top < i.bottom) : [];
       const gap = beside.length ? Math.min(...beside.map(r => i.left + 16 - r.right)) : null;
-      return { name: td.querySelector('h3').textContent.trim().slice(0, 14),
+      // 段落や題の最後の行が2文字以下で折り返していないか（1文字だけ次の行へ落ちると間が抜けて見える）
+      const orphan = [...td.querySelectorAll('h3 a, p')].some(el => {
+        const r = document.createRange(); r.selectNodeContents(el);
+        const rs = [...r.getClientRects()].filter(x => x.width > 1 && x.height > 14);
+        const ys = [...new Set(rs.map(x => Math.round(x.top)))];
+        if (ys.length < 2) return false;
+        const last = rs.filter(x => Math.round(x.top) === ys[ys.length - 1]);
+        return last.reduce((a, x) => a + x.width, 0) < 40;
+      });
+      return { orphan, name: td.querySelector('h3').textContent.trim().slice(0, 14),
         上: Math.round(top), 下: Math.round(bottom), 左: Math.round(left), 右: right === null ? null : Math.round(right),
         絵上: i ? Math.round(i.top + 4 - (title.top + 4)) : null, row: Math.round(c.top), 絵間: gap === null ? null : Math.round(gap) };
     });
@@ -79,9 +89,10 @@ function rendered() {
     const why = [];
     if (Math.abs(rowMin - r.上) > TOL) why.push('上下');
     if (r.下 - rowMin > 24) why.push('下の余り');
-    if (r.右 !== null && Math.abs(r.左 - r.右) > TOL) why.push('左右');
+    if (r.右 !== null && Math.abs(r.右 - r.上) > TOL) why.push('絵の角');
     if (Math.abs(r.絵上 ?? 0) > TOL) why.push('絵の頭');
     if (r.絵間 !== null && r.絵間 < 14) why.push('絵と文字');
+    if (r.orphan) why.push('行末の孤立');
     if (why.length) ng++;
     console.log(`${why.length ? 'NG' : 'OK'}  上${r.上} 下${r.下} 左${r.左} 右${r.右} 絵上${r.絵上} 絵間${r.絵間}  ${r.name}  ${why.join('・')}`);
   }
