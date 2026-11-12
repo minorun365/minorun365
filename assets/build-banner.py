@@ -7,7 +7,7 @@ minoruonda.com / OGP 画像と同じ「大粒タイルの斜めウェーブ」�
 SVG を書き出して rsvg-convert で PNG に焼く。
 
 GitHub は README の画像を camo プロキシ経由で配信するため、SVG のまま置くと
-文字が閲覧者側のフォントで描画されて崩れる。Mac のヒラギノでレンダリング済みの
+文字が閲覧者側のフォントで描画されて崩れる。Mac の凸版文久見出しゴシックでレンダリング済みの
 PNG にすることで、どの環境から見ても同じ見た目になる。
 """
 import math
@@ -107,7 +107,7 @@ def build_svg():
 </defs>
 <style>
   .en   {{ font-family: "Helvetica Neue",Arial,sans-serif; font-weight: 700; letter-spacing: 7px; fill: {ACCENT_SOFT}; }}
-  .name {{ font-family: "Hiragino Sans","Hiragino Kaku Gothic ProN",sans-serif; font-weight: 800; fill: #fff; }}
+  .name {{ font-family: "Toppan Bunkyu Midashi Gothic","Hiragino Sans",sans-serif; font-weight: 800; fill: #fff; }}
   .id   {{ font-family: "Helvetica Neue",Arial,sans-serif; font-weight: 700; fill: #fff; opacity: .88; }}
 </style>
 <rect width="{W}" height="{H}" fill="url(#bg)"/>
@@ -126,7 +126,7 @@ def main():
     # ⚠️ 同じファイル名で中身だけ差し替えると、GitHub や閲覧者のブラウザが
     #    古い画像をキャッシュから返し続ける。見た目を変えたらファイル名も上げる。
     svg_path = here / "banner.svg"
-    png_path = here / "banner-v3.png"
+    png_path = here / "banner-v4.png"
     svg_path.write_text(build_svg())
     subprocess.run(["rsvg-convert", "-w", str(W), "-h", str(H),
                     "-o", str(png_path), str(svg_path)], check=True)
