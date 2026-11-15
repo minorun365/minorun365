@@ -52,13 +52,14 @@ def ramp(t, stops):
     return stops[-1][1]
 
 
-# 輪：スライド（1280x720）では直径560px・右へ300px はみ出し・上下中央。
-# バナーは高さ400px なので直径を 0.8 倍にし、同じ割合だけ右へはみ出させる。
-RING_D = 448
+# 輪：共有くん（kyoyukun/page-style/brief.css）と同じ置き方。直径Dの輪を右へ .38D、下へ .22D
+# はみ出させ、輪の左上の弧を見せる。太さは 40px（2026-11-15 の比較で E・P 案に決定）。
+RING_D = 440
+RING_T = 40
 RING_R = RING_D / 2
-RING_IN = RING_R * 0.62          # mask: transparent 0 62%
-RING_CX = W + 300 * 0.8 - RING_R  # 右端から 240px はみ出す
-RING_CY = H / 2
+RING_IN = RING_R - RING_T
+RING_CX = W + 0.38 * RING_D - RING_R
+RING_CY = H + 0.22 * RING_D - RING_R
 
 
 def ring():
@@ -129,7 +130,7 @@ def main():
     # ⚠️ 同じファイル名で中身だけ差し替えると、GitHub や閲覧者のブラウザが
     #    古い画像をキャッシュから返し続ける。見た目を変えたらファイル名も上げる。
     svg_path = here / "banner.svg"
-    png_path = here / "banner-v5.png"
+    png_path = here / "banner-v6.png"
     svg_path.write_text(build_svg())
     subprocess.run(["rsvg-convert", "-w", str(W), "-h", str(H),
                     "-o", str(png_path), str(svg_path)], check=True)
