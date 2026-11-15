@@ -58,26 +58,26 @@
   </tr>
   <tr>
     <td width="50%" valign="top">
+      <h3><picture><source media="(max-width: 600px)" srcset="https://raw.githubusercontent.com/minorun365/minorun365/main/assets/cards/small/sleep-toggle-menu.png" width="42" height="44"><img align="right" width="117" src="./assets/cards/sleep-toggle-menu.png" alt=""></picture><a href="https://github.com/minorun365/sleep-toggle-menu">スリープ切替メニュー</a></h3>
+      <p>MacBookのスリープ可否をメニューバーから切り替えるmacOSアプリ。蓋を閉じても処理を続けられる。</p>
+      <p><img src="https://img.shields.io/github/stars/minorun365/sleep-toggle-menu?style=flat&logo=github&logoColor=white&label=&color=0891b2&labelColor=0369a1" alt="スター数"><br><br></p>
+    </td>
+    <td width="50%" valign="top">
       <h3><picture><source media="(max-width: 600px)" srcset="https://raw.githubusercontent.com/minorun365/minorun365/main/assets/cards/small/html-share.png" width="44" height="44"><img align="right" width="117" src="./assets/cards/html-share.png" alt=""></picture><a href="https://github.com/minorun365/html-share">HTML共有く⁠ん</a></h3>
       <p>Claude Codeが作ったHTMLを、スマホで確認・共有できるセルフホスト型⁠ツ⁠ー⁠ル⁠。</p>
       <p><img src="https://img.shields.io/github/stars/minorun365/html-share?style=flat&logo=github&logoColor=white&label=&color=0891b2&labelColor=0369a1" alt="スター数"><br><br></p>
     </td>
+  </tr>
+  <tr>
     <td width="50%" valign="top">
       <h3><picture><source media="(max-width: 600px)" srcset="https://raw.githubusercontent.com/minorun365/minorun365/main/assets/cards/small/live-dictation.png" width="44" height="44"><img align="right" width="117" src="./assets/cards/live-dictation.png" alt=""></picture><a href="https://github.com/minorun365/live-dictation">文字起こしちゃん</a></h3>
       <p>会議音声をMac内で文字起こし・要約し、英語から日本語への翻訳にも対応するmacOSアプリ。</p>
       <p><img src="https://img.shields.io/github/stars/minorun365/live-dictation?style=flat&logo=github&logoColor=white&label=&color=0891b2&labelColor=0369a1" alt="スター数"><br><br></p>
     </td>
-  </tr>
-  <tr>
     <td width="50%" valign="top">
       <h3><picture><source media="(max-width: 600px)" srcset="https://raw.githubusercontent.com/minorun365/minorun365/main/assets/cards/small/agentcore-line-chatbot.png" width="25" height="44"><img align="right" width="117" src="./assets/cards/agentcore-line-chatbot.png" alt=""></picture><a href="https://github.com/minorun365/agentcore-line-chatbot">LINE AIエージェント</a></h3>
       <p>LINEで動くAIチャットボット。ツール実行中の途中経過も吹き出しで流れる。</p>
       <p><img src="https://img.shields.io/github/stars/minorun365/agentcore-line-chatbot?style=flat&logo=github&logoColor=white&label=&color=0891b2&labelColor=0369a1" alt="スター数"><br><br></p>
-    </td>
-    <td width="50%" valign="top">
-      <h3><picture><source media="(max-width: 600px)" srcset="https://raw.githubusercontent.com/minorun365/minorun365/main/assets/cards/small/marp-agent.png" width="44" height="44"><img align="right" width="117" src="./assets/cards/marp-agent.png" alt=""></picture><a href="https://github.com/minorun365/marp-agent">パワポ作るマン</a></h3>
-      <p>対話しながらスライドを自動生成するAIエージェント。</p>
-      <p><img src="https://img.shields.io/github/stars/minorun365/marp-agent?style=flat&logo=github&logoColor=white&label=&color=0891b2&labelColor=0369a1" alt="スター数"><br><br></p>
     </td>
   </tr>
 </table>
