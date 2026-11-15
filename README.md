@@ -17,24 +17,24 @@
 <table>
   <tr>
     <td width="50%" valign="top">
-      <h3><img align="right" width="117" src="./assets/cards/unslop-ai-app.png" alt=""><a href="https://github.com/minorun365/unslop-ai-app">AI臭くないアプリ作成スキル</a></h3>
+      <h3><picture><source media="(max-width: 600px)" srcset="https://raw.githubusercontent.com/minorun365/minorun365/main/assets/cards/small/unslop-ai-app.png" width="47" height="44"><img align="right" width="117" src="./assets/cards/unslop-ai-app.png" alt=""></picture><a href="https://github.com/minorun365/unslop-ai-app">AI臭くないアプリ作成スキル</a></h3>
       <p>Webアプリの画面を「AIが作った感じ」にしないための規則と検査スクリプト。</p>
       <p><img src="https://img.shields.io/github/stars/minorun365/unslop-ai-app?style=flat&logo=github&logoColor=white&label=&color=0891b2&labelColor=0369a1" alt="スター数"><br><br></p>
     </td>
     <td width="50%" valign="top">
-      <h3><img align="right" width="117" src="./assets/cards/claude-code-japanese-guard.png" alt=""><a href="https://github.com/minorun365/claude-code-japanese-guard">日本語でおｋ</a></h3>
+      <h3><picture><source media="(max-width: 600px)" srcset="https://raw.githubusercontent.com/minorun365/minorun365/main/assets/cards/small/claude-code-japanese-guard.png" width="42" height="44"><img align="right" width="117" src="./assets/cards/claude-code-japanese-guard.png" alt=""></picture><a href="https://github.com/minorun365/claude-code-japanese-guard">日本語でおｋ</a></h3>
       <p>Claude Code の応答が英語に切り替わったら、日本語で書き直させる Stop hook。</p>
       <p><img src="https://img.shields.io/github/stars/minorun365/claude-code-japanese-guard?style=flat&logo=github&logoColor=white&label=&color=0891b2&labelColor=0369a1" alt="スター数"><br><br></p>
     </td>
   </tr>
   <tr>
     <td width="50%" valign="top">
-      <h3><img align="right" width="117" src="./assets/cards/minorun-marp-skill.png" alt=""><a href="https://github.com/minorun365/minorun-marp-skill">登壇スライド作成スキル</a></h3>
+      <h3><picture><source media="(max-width: 600px)" srcset="https://raw.githubusercontent.com/minorun365/minorun365/main/assets/cards/small/minorun-marp-skill.png" width="50" height="44"><img align="right" width="117" src="./assets/cards/minorun-marp-skill.png" alt=""></picture><a href="https://github.com/minorun365/minorun-marp-skill">登壇スライド作成スキル</a></h3>
       <p>Marpで登壇スライドを作るときの、ストーリー・図・余白の型。黒地のテーマと、書き出したPDFを実測する検査ツールつき。</p>
       <p><img src="https://img.shields.io/github/stars/minorun365/minorun-marp-skill?style=flat&logo=github&logoColor=white&label=&color=0891b2&labelColor=0369a1" alt="スター数"><br><br></p>
     </td>
     <td width="50%" valign="top">
-      <h3><img align="right" width="117" src="./assets/cards/agent-builder-skills.png" alt=""><a href="https://github.com/minorun365/agent-builder-skills">AIエージェント開発スキル</a></h3>
+      <h3><picture><source media="(max-width: 600px)" srcset="https://raw.githubusercontent.com/minorun365/minorun365/main/assets/cards/small/agent-builder-skills.png" width="50" height="44"><img align="right" width="117" src="./assets/cards/agent-builder-skills.png" alt=""></picture><a href="https://github.com/minorun365/agent-builder-skills">AIエージェント開発スキル</a></h3>
       <p>AWSでAIエージェントのWebアプリを作るときに、公式どおりでも詰まる所をまとめたスキル集。AgentCore・Strands Agents・CDKに対応。</p>
       <p><img src="https://img.shields.io/github/stars/minorun365/agent-builder-skills?style=flat&logo=github&logoColor=white&label=&color=0891b2&labelColor=0369a1" alt="スター数"><br><br></p>
     </td>
@@ -46,36 +46,36 @@
 <table>
   <tr>
     <td width="50%" valign="top">
-      <h3><img align="right" width="117" src="./assets/cards/live-advisor.png" alt=""><a href="https://github.com/minorun365/live-advisor">助言さん</a></h3>
+      <h3><picture><source media="(max-width: 600px)" srcset="https://raw.githubusercontent.com/minorun365/minorun365/main/assets/cards/small/live-advisor.png" width="43" height="44"><img align="right" width="117" src="./assets/cards/live-advisor.png" alt=""></picture><a href="https://github.com/minorun365/live-advisor">助言さん</a></h3>
       <p>文字起こしちゃんの文字起こしを読み、会議中に調査結果と議論の進め方の提案をメニューバーへ出すmacOSアプリ。</p>
       <p><img src="https://img.shields.io/github/stars/minorun365/live-advisor?style=flat&logo=github&logoColor=white&label=&color=0891b2&labelColor=0369a1" alt="スター数"><br><br></p>
     </td>
     <td width="50%" valign="top">
-      <h3><img align="right" width="117" src="./assets/cards/minorun-agent.png" alt=""><a href="https://github.com/minorun365/minorun-agent">みのるんエージェント</a></h3>
+      <h3><picture><source media="(max-width: 600px)" srcset="https://raw.githubusercontent.com/minorun365/minorun365/main/assets/cards/small/minorun-agent.png" width="24" height="44"><img align="right" width="117" src="./assets/cards/minorun-agent.png" alt=""></picture><a href="https://github.com/minorun365/minorun-agent">みのるんエージェント</a></h3>
       <p>AWS re:Invent 2026に日本から参加する人の質問に、日本語で答えるAIエージェント。</p>
       <p><img src="https://img.shields.io/github/stars/minorun365/minorun-agent?style=flat&logo=github&logoColor=white&label=&color=0891b2&labelColor=0369a1" alt="スター数"><br><br></p>
     </td>
   </tr>
   <tr>
     <td width="50%" valign="top">
-      <h3><img align="right" width="117" src="./assets/cards/html-share.png" alt=""><a href="https://github.com/minorun365/html-share">HTML共有くん</a></h3>
+      <h3><picture><source media="(max-width: 600px)" srcset="https://raw.githubusercontent.com/minorun365/minorun365/main/assets/cards/small/html-share.png" width="44" height="44"><img align="right" width="117" src="./assets/cards/html-share.png" alt=""></picture><a href="https://github.com/minorun365/html-share">HTML共有く⁠ん</a></h3>
       <p>Claude Codeが作ったHTMLを、スマホで確認・共有できるセルフホスト型⁠ツ⁠ー⁠ル⁠。</p>
       <p><img src="https://img.shields.io/github/stars/minorun365/html-share?style=flat&logo=github&logoColor=white&label=&color=0891b2&labelColor=0369a1" alt="スター数"><br><br></p>
     </td>
     <td width="50%" valign="top">
-      <h3><img align="right" width="117" src="./assets/cards/live-dictation.png" alt=""><a href="https://github.com/minorun365/live-dictation">文字起こしちゃん</a></h3>
+      <h3><picture><source media="(max-width: 600px)" srcset="https://raw.githubusercontent.com/minorun365/minorun365/main/assets/cards/small/live-dictation.png" width="44" height="44"><img align="right" width="117" src="./assets/cards/live-dictation.png" alt=""></picture><a href="https://github.com/minorun365/live-dictation">文字起こしちゃん</a></h3>
       <p>会議音声をMac内で文字起こし・要約し、英語から日本語への翻訳にも対応するmacOSアプリ。</p>
       <p><img src="https://img.shields.io/github/stars/minorun365/live-dictation?style=flat&logo=github&logoColor=white&label=&color=0891b2&labelColor=0369a1" alt="スター数"><br><br></p>
     </td>
   </tr>
   <tr>
     <td width="50%" valign="top">
-      <h3><img align="right" width="117" src="./assets/cards/agentcore-line-chatbot.png" alt=""><a href="https://github.com/minorun365/agentcore-line-chatbot">LINE AIエージェント</a></h3>
+      <h3><picture><source media="(max-width: 600px)" srcset="https://raw.githubusercontent.com/minorun365/minorun365/main/assets/cards/small/agentcore-line-chatbot.png" width="25" height="44"><img align="right" width="117" src="./assets/cards/agentcore-line-chatbot.png" alt=""></picture><a href="https://github.com/minorun365/agentcore-line-chatbot">LINE AIエージェント</a></h3>
       <p>LINEで動くAIチャットボット。ツール実行中の途中経過も吹き出しで流れる。</p>
       <p><img src="https://img.shields.io/github/stars/minorun365/agentcore-line-chatbot?style=flat&logo=github&logoColor=white&label=&color=0891b2&labelColor=0369a1" alt="スター数"><br><br></p>
     </td>
     <td width="50%" valign="top">
-      <h3><img align="right" width="117" src="./assets/cards/marp-agent.png" alt=""><a href="https://github.com/minorun365/marp-agent">パワポ作るマン</a></h3>
+      <h3><picture><source media="(max-width: 600px)" srcset="https://raw.githubusercontent.com/minorun365/minorun365/main/assets/cards/small/marp-agent.png" width="44" height="44"><img align="right" width="117" src="./assets/cards/marp-agent.png" alt=""></picture><a href="https://github.com/minorun365/marp-agent">パワポ作るマン</a></h3>
       <p>対話しながらスライドを自動生成するAIエージェント。</p>
       <p><img src="https://img.shields.io/github/stars/minorun365/marp-agent?style=flat&logo=github&logoColor=white&label=&color=0891b2&labelColor=0369a1" alt="スター数"><br><br></p>
     </td>
@@ -88,25 +88,28 @@
 
 <table>
   <tr>
-    <td width="33%" valign="top">
-      <h3><img align="right" width="79" src="./assets/cards/agentcore-book.png" alt=""><a href="https://github.com/minorun365/agentcore-book">Amazon Bedrock AgentCore実⁠践⁠入⁠門</a></h3>
+    <td width="50%" valign="top">
+      <h3><picture><source media="(max-width: 600px)" srcset="https://raw.githubusercontent.com/minorun365/minorun365/main/assets/cards/small/agentcore-book.png" width="31" height="44"><img align="right" width="79" src="./assets/cards/agentcore-book.png" alt=""></picture><a href="https://github.com/minorun365/agentcore-book">Amazon Bedrock AgentCore実⁠践⁠入⁠門</a></h3>
       <p>SBクリエイティブ · 2026年5月</p>
       <p><img src="https://img.shields.io/github/stars/minorun365/agentcore-book?style=flat&logo=github&logoColor=white&label=&color=0891b2&labelColor=0369a1" alt="スター数"><br><br></p>
     </td>
-    <td width="33%" valign="top">
-      <h3><img align="right" width="79" src="./assets/cards/agent-book.png" alt=""><a href="https://github.com/minorun365/agent-book">AIエージェント開発/運⁠用⁠入⁠門</a></h3>
+    <td width="50%" valign="top">
+      <h3><picture><source media="(max-width: 600px)" srcset="https://raw.githubusercontent.com/minorun365/minorun365/main/assets/cards/small/agent-book.png" width="31" height="44"><img align="right" width="79" src="./assets/cards/agent-book.png" alt=""></picture><a href="https://github.com/minorun365/agent-book">AIエージェント開発/運⁠用⁠入⁠門</a></h3>
       <p>SBクリエイティブ · 2025年10月</p>
       <p><img src="https://img.shields.io/github/stars/minorun365/agent-book?style=flat&logo=github&logoColor=white&label=&color=0891b2&labelColor=0369a1" alt="スター数"><br><br></p>
     </td>
-    <td width="33%" valign="top">
-      <h3><img align="right" width="79" src="./assets/cards/bedrock-book.png" alt=""><a href="https://github.com/minorun365/bedrock-book">Amazon Bedrock 生成AIアプリ開⁠発⁠入⁠門</a></h3>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <h3><picture><source media="(max-width: 600px)" srcset="https://raw.githubusercontent.com/minorun365/minorun365/main/assets/cards/small/bedrock-book.png" width="31" height="44"><img align="right" width="79" src="./assets/cards/bedrock-book.png" alt=""></picture><a href="https://github.com/minorun365/bedrock-book">Amazon Bedrock 生成AIアプリ開⁠発⁠入⁠門</a></h3>
       <p>SBクリエイティブ · 2024年6月</p>
       <p><img src="https://img.shields.io/github/stars/minorun365/bedrock-book?style=flat&logo=github&logoColor=white&label=&color=0891b2&labelColor=0369a1" alt="スター数"><br><br></p>
     </td>
+    <td width="50%" valign="top">
+      <p><br>このほかに『［みのるん式］ビジネスパーソンのためのClaude Code仕事術』『［入門］LLMアプリ開発』『MastraによるAIエージェント開発・運用［実践入門］』（技術評論社）、『やさしいMCP入門』（秀和システム）があります。</p>
+    </td>
   </tr>
 </table>
-
-このほかに『［みのるん式］ビジネスパーソンのためのClaude Code仕事術』『［入門］LLMアプリ開発』『MastraによるAIエージェント開発・運用［実践入門］』（技術評論社）、『やさしいMCP入門』（秀和システム）があります。
 
 ## 認定・受賞
 
