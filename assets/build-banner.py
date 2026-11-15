@@ -3,7 +3,7 @@
 
   python3 assets/build-banner.py
 
-minoruonda.com / OGP 画像と同じ「大粒タイルの斜めウェーブ」を横長に組み直したもの。
+個人テーマ minorun-glass の表紙（淡いターコイズの地＋右端の輪）を横長に組み直したもの。
 SVG を書き出して rsvg-convert で PNG に焼く。
 
 GitHub は README の画像を camo プロキシ経由で配信するため、SVG のまま置くと
@@ -18,11 +18,15 @@ import sys
 
 W, H = 1600, 400
 
-NAVY = "#052a5a"
-BLUE = "#0a4695"
-BLUE_MID = "#0862aa"
-BLUE_BRIGHT = "#01b6ec"
-ACCENT_SOFT = "#d8f5ff"
+# minorun-glass（personal/marp/theme/minorun-glass.css）の表紙と同じ骨格：
+# 淡いターコイズの地に、右端から青→ターコイズの輪が覗く。名前は凸版文久見出しゴシックの濃い墨。
+BG = "#f1fafc"
+TITLE = "#0d1b24"
+INK = "#3b4c57"
+TEAL = "#0891b2"
+# CSS の conic-gradient(from 200deg, ...) と同じ色の並び
+RING_STOPS = [(0.0, "#0284c7"), (0.2, "#06b6d4"), (0.4, "#22d3ee"),
+              (0.6, "#a5f3fc"), (0.8, "#ecfeff"), (1.0, "#0284c7")]
 
 
 def lerp(a, b, t):
@@ -42,81 +46,80 @@ def ramp(t, stops):
             u = 0 if p1 == p0 else (t - p0) / (p1 - p0)
             r0, g0, b0 = hex2rgb(c0)
             r1, g1, b1 = hex2rgb(c1)
-            return "#%02x%02x%02x" % (int(lerp(r0, r1, u)),
-                                      int(lerp(g0, g1, u)),
-                                      int(lerp(b0, b1, u)))
+            return "#%02x%02x%02x" % (round(lerp(r0, r1, u)),
+                                      round(lerp(g0, g1, u)),
+                                      round(lerp(b0, b1, u)))
     return stops[-1][1]
 
 
-def diagonal_wave(seed=41, cell=46):
-    """左下から右上へ流れる大粒タイル。文字を置く左側は薄く、右上ほど密にする。"""
-    rnd = random.Random(seed)
-    stops = [(0.0, BLUE), (0.42, BLUE_MID), (0.75, "#0a8dcc"), (1.0, BLUE_BRIGHT)]
+# 輪：スライド（1280x720）では直径560px・右へ300px はみ出し・上下中央。
+# バナーは高さ400px なので直径を 0.8 倍にし、同じ割合だけ右へはみ出させる。
+RING_D = 448
+RING_R = RING_D / 2
+RING_IN = RING_R * 0.62          # mask: transparent 0 62%
+RING_CX = W + 300 * 0.8 - RING_R  # 右端から 240px はみ出す
+RING_CY = H / 2
+
+
+def ring():
+    """SVG に conic-gradient が無いので、0.5度刻みの扇形を並べて輪を描く。"""
     out = []
-    for gy in range(-cell, H + cell, cell):
-        for gx in range(0, W + cell, cell):
-            # 中心線は左下→右上。sin の揺れで直線的にしない。
-            line_y = 486 - 0.28 * gx + 38 * math.sin(gx / 210 + 1.1)
-            band = max(0.0, 1.0 - abs(gy - line_y) / 205)
-            if band <= 0:
-                continue
-            # 左 1/3 は文字が乗るので、出現率を落として静かにする。
-            left_damp = min(1.0, 0.30 + gx / (W * 0.52))
-            if rnd.random() > (0.16 + band * 0.70) * left_damp:
-                continue
-            progress = max(0.0, min(1.0, gx / W))
-            size = cell * lerp(0.50, 0.88, band)
-            op = lerp(0.28, 0.92, band) * lerp(0.55, 1.0, left_damp)
-            col = ramp(progress, stops)
-            # 明るい差し色は右側だけ。文字に近い左半分へ置くと、
-            # そのタイルだけ白さが際立って視線を持っていかれる。
-            if gx > W * 0.62 and band > 0.60 and rnd.random() < 0.06:
-                col = ACCENT_SOFT
-            ox, oy = gx + (cell - size) / 2, gy + (cell - size) / 2
-            out.append(f'<rect x="{ox:.1f}" y="{oy:.1f}" width="{size:.1f}" '
-                       f'height="{size:.1f}" rx="{size * 0.12:.1f}" '
-                       f'fill="{col}" opacity="{op:.2f}"/>')
+    step = 0.5
+    a = 0.0
+    while a < 360:
+        t = a / 360
+        col = ramp(t, RING_STOPS)
+        pts = []
+        for ang, rad in ((a, RING_R), (a + step + 0.15, RING_R),
+                         (a + step + 0.15, RING_IN), (a, RING_IN)):
+            th = math.radians(200 + ang)       # CSS の conic は上が0度・時計回り
+            pts.append(f"{RING_CX + rad * math.sin(th):.2f},{RING_CY - rad * math.cos(th):.2f}")
+        out.append(f'<polygon points="{" ".join(pts)}" fill="{col}"/>')
+        a += step
     return "\n".join(out)
 
 
 # ── 名前ブロックを上下中央へ置くための計算 ───────────────────────
-# ベースラインは文字の下端なので、それをキャンバス中心に合わせると全体が上へ寄る。
-# 「英字の視覚的な上端」から「かなの視覚的な下端」までを1つの塊とみなし、
+# 「英字の視覚的な上端」から「グラデーションの短い線の下端」までを1つの塊とみなし、
 # その中点が H/2 に来るようベースラインを逆算する。
-EN_FS, NAME_FS = 32, 104
-GAP = 126                      # 英字と名前のベースライン間隔
-CAP = EN_FS * 0.72             # 英大文字の高さ（ベースラインから上）
-DESC = NAME_FS * 0.08          # かなが少しだけベースラインより下へ出る分
-BLOCK = CAP + GAP + DESC       # 塊全体の視覚的な高さ
+EN_FS, NAME_FS = 28, 100
+GAP = 118                      # 英字と名前のベースライン間隔
+CAP = EN_FS * 0.72
+LINE_GAP, LINE_H = 34, 8       # 名前のベースラインから線の上端まで、線の太さ
+BLOCK = CAP + GAP + LINE_GAP + LINE_H
 EN_Y = round((H - BLOCK) / 2 + CAP)
 NAME_Y = EN_Y + GAP
-ID_Y = NAME_Y - 2              # ハンドルは名前とほぼ同じ行に乗せる
+ID_Y = NAME_Y - 4
+LINE_Y = NAME_Y + LINE_GAP
 
 
 def build_svg():
     return f'''<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" viewBox="0 0 {W} {H}">
 <defs>
-  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-    <stop offset="0%" stop-color="{NAVY}"/><stop offset="46%" stop-color="{BLUE}"/><stop offset="76%" stop-color="{BLUE_MID}"/><stop offset="100%" stop-color="{BLUE_BRIGHT}"/>
-  </linearGradient>
-  <linearGradient id="veil" x1="0" y1="0" x2="1" y2="0">
-    <stop offset="0%" stop-color="#031f45" stop-opacity=".62"/>
-    <stop offset="46%" stop-color="#031f45" stop-opacity=".18"/>
-    <stop offset="100%" stop-color="#031f45" stop-opacity="0"/>
+  <radialGradient id="glow1" gradientUnits="userSpaceOnUse" cx="{W * 0.76:.0f}" cy="{H * 0.08:.0f}" r="520">
+    <stop offset="0%" stop-color="#22d3ee" stop-opacity=".24"/><stop offset="70%" stop-color="#22d3ee" stop-opacity="0"/>
+  </radialGradient>
+  <radialGradient id="glow2" gradientUnits="userSpaceOnUse" cx="0" cy="{H}" r="420">
+    <stop offset="0%" stop-color="#0ea5e9" stop-opacity=".08"/><stop offset="70%" stop-color="#0ea5e9" stop-opacity="0"/>
+  </radialGradient>
+  <linearGradient id="line" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0%" stop-color="#0ea5e9"/><stop offset="100%" stop-color="#22d3ee"/>
   </linearGradient>
 </defs>
 <style>
-  .en   {{ font-family: "Helvetica Neue",Arial,sans-serif; font-weight: 700; letter-spacing: 7px; fill: {ACCENT_SOFT}; }}
-  .name {{ font-family: "Toppan Bunkyu Midashi Gothic","Hiragino Sans",sans-serif; font-weight: 800; fill: #fff; }}
-  .id   {{ font-family: "Helvetica Neue",Arial,sans-serif; font-weight: 700; fill: #fff; opacity: .88; }}
+  .en   {{ font-family: "Toppan Bunkyu Midashi Gothic","Hiragino Sans",sans-serif; letter-spacing: 6px; fill: {TEAL}; }}
+  .name {{ font-family: "Toppan Bunkyu Midashi Gothic","Hiragino Sans",sans-serif; fill: {TITLE}; letter-spacing: 2px; }}
+  .id   {{ font-family: "Toppan Bunkyu Midashi Gothic","Hiragino Sans",sans-serif; fill: {INK}; }}
 </style>
-<rect width="{W}" height="{H}" fill="url(#bg)"/>
-{diagonal_wave()}
-<rect width="{W}" height="{H}" fill="url(#veil)"/>
+<rect width="{W}" height="{H}" fill="{BG}"/>
+<rect width="{W}" height="{H}" fill="url(#glow1)"/>
+<rect width="{W}" height="{H}" fill="url(#glow2)"/>
+{ring()}
 
-<text class="en"   x="104" y="{EN_Y}" font-size="{EN_FS}">MINORU ONDA</text>
+<text class="en"   x="106" y="{EN_Y}" font-size="{EN_FS}">MINORU ONDA</text>
 <text class="name" x="100" y="{NAME_Y}" font-size="{NAME_FS}">みのるん</text>
-<text class="id"   x="540" y="{ID_Y}" font-size="38">@minorun365</text>
+<text class="id"   x="545" y="{ID_Y}" font-size="38">@minorun365</text>
+<rect x="106" y="{LINE_Y}" width="120" height="{LINE_H}" rx="4" fill="url(#line)"/>
 </svg>
 '''
 
@@ -126,7 +129,7 @@ def main():
     # ⚠️ 同じファイル名で中身だけ差し替えると、GitHub や閲覧者のブラウザが
     #    古い画像をキャッシュから返し続ける。見た目を変えたらファイル名も上げる。
     svg_path = here / "banner.svg"
-    png_path = here / "banner-v4.png"
+    png_path = here / "banner-v5.png"
     svg_path.write_text(build_svg())
     subprocess.run(["rsvg-convert", "-w", str(W), "-h", str(H),
                     "-o", str(png_path), str(svg_path)], check=True)
