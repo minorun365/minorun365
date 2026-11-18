@@ -58,7 +58,7 @@
   </tr>
   <tr>
     <td width="50%" valign="top">
-      <h3><picture><source media="(max-width: 600px)" srcset="https://raw.githubusercontent.com/minorun365/minorun365/main/assets/cards/small/sleep-toggle-menu.png" width="42" height="44"><img align="right" width="117" src="./assets/cards/sleep-toggle-menu.png" alt=""></picture><a href="https://github.com/minorun365/sleep-toggle-menu">スリープ切替メニュー</a></h3>
+      <h3><picture><source media="(max-width: 600px)" srcset="https://raw.githubusercontent.com/minorun365/minorun365/main/assets/cards/small/sleep-toggle-menu.png" width="40" height="44"><img align="right" width="117" src="./assets/cards/sleep-toggle-menu.png" alt=""></picture><a href="https://github.com/minorun365/sleep-toggle-menu">スリープ切替メニュー</a></h3>
       <p>MacBookのスリープ可否をメニューバーから切り替えるmacOSアプリ。蓋を閉じても処理を続けられる。</p>
       <p><img src="https://img.shields.io/github/stars/minorun365/sleep-toggle-menu?style=flat&logo=github&logoColor=white&label=&color=0891b2&labelColor=0369a1" alt="スター数"><br><br></p>
     </td>
