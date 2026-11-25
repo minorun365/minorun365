@@ -47,7 +47,7 @@
   <tr>
     <td width="50%" valign="top">
       <h3><picture><source media="(max-width: 600px)" srcset="https://raw.githubusercontent.com/minorun365/minorun365/main/assets/cards/small/live-advisor.png" width="43" height="44"><img align="right" width="117" src="./assets/cards/live-advisor.png" alt=""></picture><a href="https://github.com/minorun365/live-advisor">助言さん</a></h3>
-      <p>文字起こしちゃんの文字起こしを読み、会議中に調査結果と議論の進め方の提案をメニューバーへ出すmacOSアプリ。</p>
+      <p>文字起こしちゃんの書き起こしを読み、会議中に調査結果と議論の進め方の提案をメニューバーに出すmacOSアプリ。</p>
       <p><img src="https://img.shields.io/github/stars/minorun365/live-advisor?style=flat&logo=github&logoColor=white&label=&color=0891b2&labelColor=0369a1" alt="スター数"><br><br></p>
     </td>
     <td width="50%" valign="top">
@@ -59,7 +59,7 @@
   <tr>
     <td width="50%" valign="top">
       <h3><picture><source media="(max-width: 600px)" srcset="https://raw.githubusercontent.com/minorun365/minorun365/main/assets/cards/small/sleep-toggle-menu.png" width="40" height="44"><img align="right" width="117" src="./assets/cards/sleep-toggle-menu.png" alt=""></picture><a href="https://github.com/minorun365/sleep-toggle-menu">スリープ切替メニュー</a></h3>
-      <p>MacBookのスリープ可否をメニューバーから切り替えるmacOSアプリ。蓋を閉じても処理を続けられる。</p>
+      <p>MacBookがスリープするかどうかをメニューバーから切り替えるmacOSアプリ。蓋を閉じても処理を続けられる。</p>
       <p><img src="https://img.shields.io/github/stars/minorun365/sleep-toggle-menu?style=flat&logo=github&logoColor=white&label=&color=0891b2&labelColor=0369a1" alt="スター数"><br><br></p>
     </td>
     <td width="50%" valign="top">
@@ -71,7 +71,7 @@
   <tr>
     <td width="50%" valign="top">
       <h3><picture><source media="(max-width: 600px)" srcset="https://raw.githubusercontent.com/minorun365/minorun365/main/assets/cards/small/live-dictation.png" width="44" height="44"><img align="right" width="117" src="./assets/cards/live-dictation.png" alt=""></picture><a href="https://github.com/minorun365/live-dictation">文字起こしちゃん</a></h3>
-      <p>会議音声をMac内で文字起こし・要約し、英語から日本語への翻訳にも対応するmacOSアプリ。</p>
+      <p>会議の音声をMac内で文字起こし・要約し、英語から日本語への翻訳にも対応するmacOSアプリ。</p>
       <p><img src="https://img.shields.io/github/stars/minorun365/live-dictation?style=flat&logo=github&logoColor=white&label=&color=0891b2&labelColor=0369a1" alt="スター数"><br><br></p>
     </td>
     <td width="50%" valign="top">
