@@ -17,6 +17,18 @@
 <table>
   <tr>
     <td width="50%" valign="top">
+      <h3><picture><source media="(max-width: 600px)" srcset="https://raw.githubusercontent.com/minorun365/minorun365/main/assets/cards/small/minorun-marp-skill.png" width="50" height="44"><img align="right" width="117" src="./assets/cards/minorun-marp-skill.png" alt=""></picture><a href="https://github.com/minorun365/minorun-marp-skill">登壇スライド作成スキル</a></h3>
+      <p>Marpで登壇スライドを作るときの、ストーリー・図・余白の型。黒地のテーマと、書き出したPDFを実測する検査ツールつき。</p>
+      <p><img src="https://img.shields.io/github/stars/minorun365/minorun-marp-skill?style=flat&logo=github&logoColor=white&label=&color=0891b2&labelColor=0369a1" alt="スター数"><br><br></p>
+    </td>
+    <td width="50%" valign="top">
+      <h3><picture><source media="(max-width: 600px)" srcset="https://raw.githubusercontent.com/minorun365/minorun365/main/assets/cards/small/presenter.png" width="65" height="44"><img align="right" width="117" src="./assets/cards/presenter.png" alt=""></picture><a href="https://github.com/minorun365/presenter">パワポ映すマン</a></h3>
+      <p>Marpのスライドを、PowerPointの代わりに投影するスクリプト。残り時間を見ながら、もう1枚のディスプレイへ発表画面を出せる。</p>
+      <p><img src="https://img.shields.io/github/stars/minorun365/presenter?style=flat&logo=github&logoColor=white&label=&color=0891b2&labelColor=0369a1" alt="スター数"><br><br></p>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
       <h3><picture><source media="(max-width: 600px)" srcset="https://raw.githubusercontent.com/minorun365/minorun365/main/assets/cards/small/unslop-ai-app.png" width="47" height="44"><img align="right" width="117" src="./assets/cards/unslop-ai-app.png" alt=""></picture><a href="https://github.com/minorun365/unslop-ai-app">AI臭くないアプリ作成スキル</a></h3>
       <p>Webアプリの画面を「AIが作った感じ」にしないための規則と検査スクリプト。</p>
       <p><img src="https://img.shields.io/github/stars/minorun365/unslop-ai-app?style=flat&logo=github&logoColor=white&label=&color=0891b2&labelColor=0369a1" alt="スター数"><br><br></p>
@@ -29,14 +41,14 @@
   </tr>
   <tr>
     <td width="50%" valign="top">
-      <h3><picture><source media="(max-width: 600px)" srcset="https://raw.githubusercontent.com/minorun365/minorun365/main/assets/cards/small/minorun-marp-skill.png" width="50" height="44"><img align="right" width="117" src="./assets/cards/minorun-marp-skill.png" alt=""></picture><a href="https://github.com/minorun365/minorun-marp-skill">登壇スライド作成スキル</a></h3>
-      <p>Marpで登壇スライドを作るときの、ストーリー・図・余白の型。黒地のテーマと、書き出したPDFを実測する検査ツールつき。</p>
-      <p><img src="https://img.shields.io/github/stars/minorun365/minorun-marp-skill?style=flat&logo=github&logoColor=white&label=&color=0891b2&labelColor=0369a1" alt="スター数"><br><br></p>
-    </td>
-    <td width="50%" valign="top">
       <h3><picture><source media="(max-width: 600px)" srcset="https://raw.githubusercontent.com/minorun365/minorun365/main/assets/cards/small/agent-builder-skills.png" width="50" height="44"><img align="right" width="117" src="./assets/cards/agent-builder-skills.png" alt=""></picture><a href="https://github.com/minorun365/agent-builder-skills">AIエージェント開発スキル</a></h3>
       <p>AWSでAIエージェントのWebアプリを作るときに、公式どおりでも詰まる所をまとめたスキル集。AgentCore・Strands Agents・CDKに対応。</p>
       <p><img src="https://img.shields.io/github/stars/minorun365/agent-builder-skills?style=flat&logo=github&logoColor=white&label=&color=0891b2&labelColor=0369a1" alt="スター数"><br><br></p>
+    </td>
+    <td width="50%" valign="top">
+      <h3><picture><source media="(max-width: 600px)" srcset="https://raw.githubusercontent.com/minorun365/minorun365/main/assets/cards/small/html-share.png" width="44" height="44"><img align="right" width="117" src="./assets/cards/html-share.png" alt=""></picture><a href="https://github.com/minorun365/html-share">HTML共有く⁠ん</a></h3>
+      <p>Claude Codeが作ったHTMLを、スマホで確認・共有できるセルフホスト型⁠ツ⁠ー⁠ル⁠。</p>
+      <p><img src="https://img.shields.io/github/stars/minorun365/html-share?style=flat&logo=github&logoColor=white&label=&color=0891b2&labelColor=0369a1" alt="スター数"><br><br></p>
     </td>
   </tr>
 </table>
@@ -46,26 +58,26 @@
 <table>
   <tr>
     <td width="50%" valign="top">
+      <h3><picture><source media="(max-width: 600px)" srcset="https://raw.githubusercontent.com/minorun365/minorun365/main/assets/cards/small/handy-translator.png" width="62" height="44"><img align="right" width="117" src="./assets/cards/handy-translator.png" alt=""></picture><a href="https://github.com/minorun365/handy-translator">通訳くん</a></h3>
+      <p>英語の講演や会話をiPhone単体で聞き取り、日本語の字幕と直近5分の要約を出すiOSアプリ。</p>
+      <p><img src="https://img.shields.io/github/stars/minorun365/handy-translator?style=flat&logo=github&logoColor=white&label=&color=0891b2&labelColor=0369a1" alt="スター数"><br><br></p>
+    </td>
+    <td width="50%" valign="top">
       <h3><picture><source media="(max-width: 600px)" srcset="https://raw.githubusercontent.com/minorun365/minorun365/main/assets/cards/small/live-advisor.png" width="43" height="44"><img align="right" width="117" src="./assets/cards/live-advisor.png" alt=""></picture><a href="https://github.com/minorun365/live-advisor">助言さん</a></h3>
       <p>文字起こしちゃんの書き起こしを読み、会議中に調査結果と議論の進め方の提案をメニューバーに出すmacOSアプリ。</p>
       <p><img src="https://img.shields.io/github/stars/minorun365/live-advisor?style=flat&logo=github&logoColor=white&label=&color=0891b2&labelColor=0369a1" alt="スター数"><br><br></p>
     </td>
+  </tr>
+  <tr>
     <td width="50%" valign="top">
       <h3><picture><source media="(max-width: 600px)" srcset="https://raw.githubusercontent.com/minorun365/minorun365/main/assets/cards/small/minorun-agent.png" width="24" height="44"><img align="right" width="117" src="./assets/cards/minorun-agent.png" alt=""></picture><a href="https://github.com/minorun365/minorun-agent">みのるんエージェント</a></h3>
       <p>AWS re:Invent 2026に日本から参加する人の質問に、日本語で答えるAIエージェント。</p>
       <p><img src="https://img.shields.io/github/stars/minorun365/minorun-agent?style=flat&logo=github&logoColor=white&label=&color=0891b2&labelColor=0369a1" alt="スター数"><br><br></p>
     </td>
-  </tr>
-  <tr>
     <td width="50%" valign="top">
       <h3><picture><source media="(max-width: 600px)" srcset="https://raw.githubusercontent.com/minorun365/minorun365/main/assets/cards/small/sleep-toggle-menu.png" width="40" height="44"><img align="right" width="117" src="./assets/cards/sleep-toggle-menu.png" alt=""></picture><a href="https://github.com/minorun365/sleep-toggle-menu">スリープ切替メニュー</a></h3>
       <p>MacBookがスリープするかどうかをメニューバーから切り替えるmacOSアプリ。蓋を閉じても処理を続けられる。</p>
       <p><img src="https://img.shields.io/github/stars/minorun365/sleep-toggle-menu?style=flat&logo=github&logoColor=white&label=&color=0891b2&labelColor=0369a1" alt="スター数"><br><br></p>
-    </td>
-    <td width="50%" valign="top">
-      <h3><picture><source media="(max-width: 600px)" srcset="https://raw.githubusercontent.com/minorun365/minorun365/main/assets/cards/small/html-share.png" width="44" height="44"><img align="right" width="117" src="./assets/cards/html-share.png" alt=""></picture><a href="https://github.com/minorun365/html-share">HTML共有く⁠ん</a></h3>
-      <p>Claude Codeが作ったHTMLを、スマホで確認・共有できるセルフホスト型⁠ツ⁠ー⁠ル⁠。</p>
-      <p><img src="https://img.shields.io/github/stars/minorun365/html-share?style=flat&logo=github&logoColor=white&label=&color=0891b2&labelColor=0369a1" alt="スター数"><br><br></p>
     </td>
   </tr>
   <tr>
